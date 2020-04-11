@@ -1,6 +1,6 @@
 ---
 title: FIRST Robotics
-date: 2020-04-11 15:12:54
+date: 2019-10-15 00:00:16
 tags:
 ---
 Honestly, this post has been a long time coming. I've been involved with [FIRST](1) (For Inspiration and Recognition of Science and Technology) since I was in 4th grade almost nine years ago, and I can honestly say that my life has changed for the better. I was part of my district's first ever robotics team, competing at our first events, and winning our first awards. That experience was absolutely amazing, and now, working on an FRC team with robots and coding that 4th-grade me could only begin to imagine is even better.
