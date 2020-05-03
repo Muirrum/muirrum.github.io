@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Announcing Campmaster Constantine | Muirrum&#39;s Ramblings</title>
-  <meta name="keywords" content=" project ">
-  <meta name="description" content="Announcing Campmaster Constantine | Muirrum&#39;s Ramblings">
+  <title>Online Scouting | Muirrum&#39;s Ramblings</title>
+  <meta name="keywords" content=" scouting ">
+  <meta name="description" content="Online Scouting | Muirrum&#39;s Ramblings">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="I’m a High School Junior from New England. I’m a Life Scout in the Boy Scouts of America. In my spare time, I’m a technician-class Amateur Radio operator and hiking enthusiast. I also volunteer wherev">
 <meta property="og:type" content="website">
@@ -229,9 +229,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Announcing-Campmaster-Constantine" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Online-Scouting" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Announcing Campmaster Constantine</h1>
+        <h1 class="article-title">Online Scouting</h1>
     
     <div class="article-meta">
         
@@ -240,14 +240,14 @@
         
         <span class="tag">
             
-            <a class="color3">project</a>
+            <a class="color4">scouting</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        Creation Time:<time class="date" title='更新时间: 2020-04-29 15:36:11'>2020-04-29 15:11</time>
+        Creation Time:<time class="date" title='更新时间: 2020-05-02 22:15:02'>2020-05-02 21:55</time>
         
     </div>
     <div class="article-meta">
@@ -258,7 +258,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Camp-Quarantine"><span class="toc-text">Camp Quarantine</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sourcehut"><span class="toc-text">Sourcehut</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Outcome"><span class="toc-text">The Outcome</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Keeping-the-Scouting-Spirit-Alive"><span class="toc-text">Keeping the Scouting Spirit Alive</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#After-Coronavirus"><span class="toc-text">After Coronavirus</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -274,11 +274,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>I’ve been on Discord for five years now, and I’ve been developing bots for it since at least 2016. In that time I’ve really had two major bot projects, namely the OtmasBot and Kronos. Both of those were implemented in Node.JS, and they both had their respective problems. The OtmasBot was a <a href="https://github.com/Muirrum/Kronos/tree/9e4aa458c62493671ea72c98d0ccd01fdeeca117" target="_blank" rel="noopener">mess</a>, and sometimes the <a href="2https://github.com/Muirrum/Kronos/commit/5c0d1218a70f4cf7f205ae70f7b21ff953d783bc">token</a> even got leaked into git as well. Kronos was different. Kronos had a decent command framework (run through <a href="https://discord.js.org/#/docs/commando/master/general/welcome" target="_blank" rel="noopener">discord.js-commando</a>) and commands that (sometimes) worked. The major difficulty I ran into with Kronos was getting the databases to play nicely with my code. There were multiple issues with SQLite and Docker, spread across many different repositories as I tried GitHub, GitLab, and different frameworks like Klasa. None of them worked, and the project lost my interest for a while.</p>
-<h2 id="Camp-Quarantine"><a href="#Camp-Quarantine" class="headerlink" title="Camp Quarantine"></a>Camp Quarantine</h2><p>Enter Camp Quarantine, a new Discord server focused around inclusive international Scouting. As one of the founding staff members, I wanted to provide something to help the server out, and I immediately thought of a bot. At first, I was going to implement it in Node.JS again. Then, I remembered all the difficulties I had last time I tried that, and I remembered that I’ve been meaning to learn <a href="https://rust-lang.org" target="_blank" rel="noopener">Rust</a> for a while. I know that making a Discord bot is not <em>exactly</em> the preferred way to learn a new language, but it worked for Node.JS, why couldn’t it work with Rust? I decided on using the <a href="https://github.com/serenity-rs/serenity" target="_blank" rel="noopener">serenity</a> library, which included a “Standard Framework” to make commands easier.</p>
-<h2 id="Sourcehut"><a href="#Sourcehut" class="headerlink" title="Sourcehut"></a>Sourcehut</h2><p>Around this time, I discovered <a href="https://sourcehut.org/" target="_blank" rel="noopener">Sourcehut</a>. Sourcehut is a simple, JavaScript-free project site that’s split up into several different services, like Git, CI, and Todo lists. I decided I’d give Sourcehut a go along with Rust.</p>
-<h2 id="The-Outcome"><a href="#The-Outcome" class="headerlink" title="The Outcome"></a>The Outcome</h2><p>Somehow, this combination of new services, languages, and libraries worked. I’ve been more productive in the last few weeks than I ever have been before. Campmaster Constantine has grown in functionality faster than either Kronos or the OtmasBot, and the code is cleaner and faster. My databases “just work”. I’ve finally figured out how to make Continuous Deployment work properly, and I’ve learned so much about Rust and Git.</p>
-<p>For all software developers, I’d <em>highly</em> recommened both Rust and Sourcehut. They’re both incredibly powerful and useful tools. As for the Campmaster, he’s available to <a href="https://discordapp.com/api/oauth2/authorize?client_id=702632205062635607&permissions=26630&scope=bot" target="_blank" rel="noopener">join</a> your Discord servers and start working today! You can read more about him <a href="https://hub.sr.ht/~muirrum/Campmaster-Constantine/" target="_blank" rel="noopener">here</a>.</p>
+        <p>During this pandemic and state of quarantine, many activities are moving online. This includes everything from schools, to work, to Scouting. I am not new to the world of online Scouting, having volunteered at the 2019 Jamboree on the Internet with <a href="https://scoutlink.net" target="_blank" rel="noopener">ScoutLink</a>, and being a member of the largest Discord Scouting community, <a href="https://discord.gg/a4TQPdg" target="_blank" rel="noopener">Discord Scout Troop</a> since April of last year. Through each of these, I’ve made friends from around the world, and learned more about other cultures than I ever would’ve otherwise.</p>
+<p>I’ve seen firsthand the impacts that this sort of international goodwill can have on people. I wrote about some of that in my post about the <a href="http://devosmium.xyz/2019/08/04/24th-World-Scout-Jamboree/">24th World Scout Jamboree</a>, but there’s so much more to it.</p>
+<h2 id="Keeping-the-Scouting-Spirit-Alive"><a href="#Keeping-the-Scouting-Spirit-Alive" class="headerlink" title="Keeping the Scouting Spirit Alive"></a>Keeping the Scouting Spirit Alive</h2><p>Throughout the quarantine, I’ve seen many community leaders emerge and try to keep Scouts engaged. These range from small Discord servers to giant National Scouting Organizations like the <a href="https://scouting.org" target="_blank" rel="noopener">BSA</a>. They all want to keep Scouts both young and old engaged during this time of crisis. One of the most successful challenges that I’ve seen has been the “Pass-the-Necker” challenge, where 24th WSJ participants would “pass” their red youth participant necker from camera to camera, traveling all over the world. Other communities have a daily “Question of the Day” to answer, or challenges to complete.</p>
+<p>All of these serve to remind people of the unifying power of Scouting and the incredible impact it can have on people’s lives. Why stop when the quarantine is over?</p>
+<h2 id="After-Coronavirus"><a href="#After-Coronavirus" class="headerlink" title="After Coronavirus"></a>After Coronavirus</h2><p>Certainly, at the moment we should all be focusing on the present health crisis and doing everything we can to hasten its conclusion. However, we should also be looking to what the world will look like when we’re returning to “normal”, whatever that looks like. A lot of resources have been created or updated to help provide programs of all kinds at home, and that’s something that should be continued well after Coronavirus has “ended”.</p>
+<p>It’s important that Scouting and other youth programs have the ability to reach as many people as they can, including people who may not be able to participate in the regular activities, for whatever reason. These new “work from home” tools and procedures shouldn’t completely go away when this is all over.</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please cite back to this page if you use it. Feel free to verify all citations and point out errors or any ambiguity. Email concerns to devosmium@devosmium.xyz </span>
@@ -288,12 +289,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">Title:</span>Announcing Campmaster Constantine</p>
+    <p><span class="copy-title">Title:</span>Online Scouting</p>
     
     <p><span class="copy-title">Author:</span><a  title="Owen Salter">Owen Salter</a></p>
-    <p><span class="copy-title">Date Published:</span>2020-04-29, 15:11:16</p>
-    <p><span class="copy-title">Last Updated:</span>2020-04-29, 15:36:11</p>
-    <span class="copy-title">Permalink:</span><a class="post-url" href="/2020/04/29/Announcing-Campmaster-Constantine/" title="Announcing Campmaster Constantine">https://devosmium.xyz/2020/04/29/Announcing-Campmaster-Constantine/</a>
+    <p><span class="copy-title">Date Published:</span>2020-05-02, 21:55:33</p>
+    <p><span class="copy-title">Last Updated:</span>2020-05-02, 22:15:02</p>
+    <span class="copy-title">Permalink:</span><a class="post-url" href="/2020/05/02/Online-Scouting/" title="Online Scouting">https://devosmium.xyz/2020/05/02/Online-Scouting/</a>
     <p>
         <span class="copy-title">Copyright:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC-BY-SA 4.0"</a> Cite back to posts that you use
     </p>
