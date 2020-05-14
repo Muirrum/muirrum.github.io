@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Announcing Campmaster Constantine | Muirrum&#39;s Ramblings</title>
-  <meta name="keywords" content=" project ">
-  <meta name="description" content="Announcing Campmaster Constantine | Muirrum&#39;s Ramblings">
+  <title>Scouts and D&amp;D | Muirrum&#39;s Ramblings</title>
+  <meta name="keywords" content=" scouting ">
+  <meta name="description" content="Scouts and D&amp;D | Muirrum&#39;s Ramblings">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="I’m a High School Junior from New England. I’m a Life Scout in the Boy Scouts of America. In my spare time, I’m a technician-class Amateur Radio operator and hiking enthusiast. I also volunteer wherev">
 <meta property="og:type" content="website">
@@ -237,9 +237,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Announcing-Campmaster-Constantine" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Scouts-and-D-D" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Announcing Campmaster Constantine</h1>
+        <h1 class="article-title">Scouts and D&amp;D</h1>
     
     <div class="article-meta">
         
@@ -248,14 +248,14 @@
         
         <span class="tag">
             
-            <a class="color3">project</a>
+            <a class="color4">scouting</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        Creation Time:<time class="date" title='更新时间: 2020-04-29 15:36:11'>2020-04-29 15:11</time>
+        Creation Time:<time class="date" title='更新时间: 2020-05-14 09:55:21'>2020-01-08 17:23</time>
         
     </div>
     <div class="article-meta">
@@ -266,7 +266,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Camp-Quarantine"><span class="toc-text">Camp Quarantine</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sourcehut"><span class="toc-text">Sourcehut</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Outcome"><span class="toc-text">The Outcome</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Mechanics"><span class="toc-text">Mechanics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Adventures"><span class="toc-text">Adventures</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-text">Conclusion</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -282,11 +282,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>I’ve been on Discord for five years now, and I’ve been developing bots for it since at least 2016. In that time I’ve really had two major bot projects, namely the OtmasBot and Kronos. Both of those were implemented in Node.JS, and they both had their respective problems. The OtmasBot was a <a href="https://github.com/Muirrum/Kronos/tree/9e4aa458c62493671ea72c98d0ccd01fdeeca117" target="_blank" rel="noopener">mess</a>, and sometimes the <a href="2https://github.com/Muirrum/Kronos/commit/5c0d1218a70f4cf7f205ae70f7b21ff953d783bc">token</a> even got leaked into git as well. Kronos was different. Kronos had a decent command framework (run through <a href="https://discord.js.org/#/docs/commando/master/general/welcome" target="_blank" rel="noopener">discord.js-commando</a>) and commands that (sometimes) worked. The major difficulty I ran into with Kronos was getting the databases to play nicely with my code. There were multiple issues with SQLite and Docker, spread across many different repositories as I tried GitHub, GitLab, and different frameworks like Klasa. None of them worked, and the project lost my interest for a while.</p>
-<h2 id="Camp-Quarantine"><a href="#Camp-Quarantine" class="headerlink" title="Camp Quarantine"></a>Camp Quarantine</h2><p>Enter Camp Quarantine, a new Discord server focused around inclusive international Scouting. As one of the founding staff members, I wanted to provide something to help the server out, and I immediately thought of a bot. At first, I was going to implement it in Node.JS again. Then, I remembered all the difficulties I had last time I tried that, and I remembered that I’ve been meaning to learn <a href="https://rust-lang.org" target="_blank" rel="noopener">Rust</a> for a while. I know that making a Discord bot is not <em>exactly</em> the preferred way to learn a new language, but it worked for Node.JS, why couldn’t it work with Rust? I decided on using the <a href="https://github.com/serenity-rs/serenity" target="_blank" rel="noopener">serenity</a> library, which included a “Standard Framework” to make commands easier.</p>
-<h2 id="Sourcehut"><a href="#Sourcehut" class="headerlink" title="Sourcehut"></a>Sourcehut</h2><p>Around this time, I discovered <a href="https://sourcehut.org/" target="_blank" rel="noopener">Sourcehut</a>. Sourcehut is a simple, JavaScript-free project site that’s split up into several different services, like Git, CI, and Todo lists. I decided I’d give Sourcehut a go along with Rust.</p>
-<h2 id="The-Outcome"><a href="#The-Outcome" class="headerlink" title="The Outcome"></a>The Outcome</h2><p>Somehow, this combination of new services, languages, and libraries worked. I’ve been more productive in the last few weeks than I ever have been before. Campmaster Constantine has grown in functionality faster than either Kronos or the OtmasBot, and the code is cleaner and faster. My databases “just work”. I’ve finally figured out how to make Continuous Deployment work properly, and I’ve learned so much about Rust and Git.</p>
-<p>For all software developers, I’d <em>highly</em> recommened both Rust and Sourcehut. They’re both incredibly powerful and useful tools. As for the Campmaster, he’s available to <a href="https://discordapp.com/api/oauth2/authorize?client_id=702632205062635607&permissions=26630&scope=bot" target="_blank" rel="noopener">join</a> your Discord servers and start working today! You can read more about him <a href="https://hub.sr.ht/~muirrum/Campmaster-Constantine/" target="_blank" rel="noopener">here</a>.</p>
+        <p>One of the earliest memories I have in Scouting is circling a picnic table with some dice and playing a dumbed-down version of D&amp;D. That was the experience that introduced me to the game, and, while I've grown as both a Dungeon Master and a player, I still have one-shot adventures to run with my younger Scouts.</p> 
+
+<h2 id="Mechanics"><a href="#Mechanics" class="headerlink" title="Mechanics"></a>Mechanics</h2><p>It’s hard to play a game like Dungeons and Dragons at camp. Camp gets wet, and so do character sheets. Camp gets muddy and dirty, so do miniatures and game mats. Most importantly, younger Scouts aren’t always as keen on writing everything down and moving miniatures around as older, more experienced players. What my troop has done for these problems is remove a lot of the complexity surrounding the game. We don’t use character sheets. Instead, we have each player pick a race and a class, solely for roleplaying. The DM decides what each class gets at the beginning (for example, a wizard might start off with Magic Missile or Fireball, and a rogue might start off with a crossbow or knife). Dice are rolled in something from a Scout’s mess kit, and it’s rare to use a die other than a d20.</p>
+<p>“No character sheets? High level spells to low level characters? That doesn’t sound like D&amp;D at all!” I know, that seems like a really oversimplified version of the game. The point of getting rid of all those extra dice and complications is to make the game more accessible to a younger audience.</p>
+<h2 id="Adventures"><a href="#Adventures" class="headerlink" title="Adventures"></a>Adventures</h2><p>It’s usually a good idea to try and find some one-shot adventures with a simple plot. One of the ones I can usually fall back on is “Beneath the Ruins of Firestone Keep” from <a href="https://www.drivethrurpg.com/product/205741/Beneath-the-Ruins-of-Firestone-Keep--Adventure" target="_blank" rel="noopener">DriveThruRPG.</a> I managed to get it on sale, but it’s a well-written adventure that you can use to ease new Scouts into the game. An alternative is, as always, to write your own adventure. For this, don’t make the plot too complex. It should be fairly simple, especially for young Scouts. Dungeons and other locations should all be able to fit in a small notebook, with minimal notes.</p>
+<p>Whether you use a premade module or opt for the homebrew route, all the components of the adventure, like traps and monsters, are defeated or bypassed mostly when the DM feels like it. For traps, I usually pick a DC of around 10 to 15. Monsters are defeated when I feel that the players have expended enough effort to defeat it. This leads to less time spent messing with papers and statblocks and more time spent engaging the Scouts.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In general, the goal of introducing Scouts to Dungeons and Dragons should be to ease them in, with minimal complexity. By eliminating character sheets, most dice, and using simple adventures, the game can be made a bit more engaging for them. This can be made into a great activity for the trail too. Take a cup and use it for dice, and play the game like that. That’s how I’ve gotten through a lot of Scout hikes, and it’s a good way to keep Scouts entertained.</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please cite back to this page if you use it. Feel free to verify all citations and point out errors or any ambiguity. Email concerns to devosmium@devosmium.xyz </span>
@@ -296,12 +298,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">Title:</span>Announcing Campmaster Constantine</p>
+    <p><span class="copy-title">Title:</span>Scouts and D&amp;D</p>
     
     <p><span class="copy-title">Author:</span><a  title="Owen Salter">Owen Salter</a></p>
-    <p><span class="copy-title">Date Published:</span>2020-04-29, 15:11:16</p>
-    <p><span class="copy-title">Last Updated:</span>2020-04-29, 15:36:11</p>
-    <span class="copy-title">Permalink:</span><a class="post-url" href="/2020/04/29/Announcing-Campmaster-Constantine/" title="Announcing Campmaster Constantine">https://devosmium.xyz/2020/04/29/Announcing-Campmaster-Constantine/</a>
+    <p><span class="copy-title">Date Published:</span>2020-01-08, 17:23:00</p>
+    <p><span class="copy-title">Last Updated:</span>2020-05-14, 09:55:21</p>
+    <span class="copy-title">Permalink:</span><a class="post-url" href="/2020/01/08/Scouts-and-D-D/" title="Scouts and D&amp;D">https://devosmium.xyz/2020/01/08/Scouts-and-D-D/</a>
     <p>
         <span class="copy-title">Copyright:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC-BY-SA 4.0"</a> Cite back to posts that you use
     </p>
